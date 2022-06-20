@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/f0rs3ndadm1n2021/public_html/crazyoutlet/wp-content/themes/comercio3/
+    - /bin/cp -R comercio3 $DEPLOYPATH

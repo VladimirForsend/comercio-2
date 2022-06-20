@@ -1,0 +1,35 @@
+/* clases para la pagina de error 404 */
+.error404 .section-404{
+	background-color: var(--color-cliente);
+}
+.error404 .section-404 .fondo-404{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30vw;
+	min-height: 200px;
+}
+.error404 .section-404 .titulo-404{
+	font-weight: bolder;
+	font-size: 65px;
+	color: var(--color-cliente);
+	text-shadow: 3px 3px blue;
+	margin-bottom:0;
+}
+.error404 .section-404 .boton-404{
+	padding: 10px 40px;
+	border-radius: 5px;
+	background-color: var(--color-cliente);
+	color: white;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.error404 .section-404 .boton-404:hover{
+	box-shadow: 0 7px 16px 0 rgba(0,0,0,.2);
+}
+.error404 .titulo-carrusel-productos{
+	background-color: var(--color-agotado);
+}
+.error404 #masthead, .error404 #colophon{
+	display:none;
+}

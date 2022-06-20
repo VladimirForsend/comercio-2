@@ -1,0 +1,21 @@
+/*calendario*/
+.single-calendar header.entry-header {
+color: #333!important;
+height:auto!important;
+min-height:10rem!important;
+   
+}
+/*calendario*/
+/* clases para paginas interiores */
+.page-id-139 #ContenidoPage .panel-grid-cell{
+	padding: 20px 30px 15px 30px;
+	background-color: #f8f8f8;
+	box-shadow: 0 1px 2px 0 #ccc;
+}
+.page-id-139 #ContenidoPage ul{
+	margin-left:0;
+	list-style: disc;
+}
+.page-id-139 #ContenidoPage ul li{
+	padding: 10px 0;
+}
