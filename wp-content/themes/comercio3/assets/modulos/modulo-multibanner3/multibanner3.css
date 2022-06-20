@@ -1,8 +1,8 @@
-#multibanner .multibanner-contenedor .banner a{
+#multibannerc .multibanner-contenedor .banner a{
     position: relative;
     overflow: hidden;
 }
-#multibanner .multibanner-contenedor .banner a img{
+#multibannerc .multibanner-contenedor .banner a img{
     min-width: 100%;
     min-height: 100%;
     height: auto;
@@ -11,6 +11,6 @@
     object-position: center;
     transition: 0.3s;
 }
-#multibanner .multibanner-contenedor .banner a:hover img{
+#multibannerc .multibanner-contenedor .banner a:hover img{
     transform: scale(105%);
 }

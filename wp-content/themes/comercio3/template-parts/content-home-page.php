@@ -22,9 +22,13 @@
 			<a class="w-100 btn background-marca" href="<?php the_field('ver_todos_los_productos');?>">Ver todos los productos</a>
 		</div>
 
+		<!-- multibanners -->
+        <?php include get_template_directory() . '/assets/modulos/modulo-multibanner2/multibanner2.php'; ?>
+        <!-- multibanners -->
         <!-- multibanners -->
         <?php include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.php'; ?>
         <!-- multibanners -->
-		prueba de github
-		prueba de github 2
+		<!-- multibanners -->
+        <?php include get_template_directory() . '/assets/modulos/modulo-multibanner3/multibanner3.php'; ?>
+        <!-- multibanners -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -3,8 +3,8 @@
 function multibanner_register() {
 
     $labels = array(
-        'name' => _x('MultiBanners', 'post type general name'),
-        'singular_name' => _x('Multibanner', 'post type singular name'),
+        'name' => _x('MultiBanners Central', 'post type general name'),
+        'singular_name' => _x('Multibanner Central', 'post type singular name'),
         'add_new' => _x('Agregar nuevo banner', 'slideshow_two item'),
         'add_new_item' => __('Agregar nuevo banner'),
         'edit_item' => __('Editar banner'),

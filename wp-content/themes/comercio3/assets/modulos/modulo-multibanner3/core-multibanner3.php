@@ -1,10 +1,10 @@
 <?php  /*  Multibanners */
 
-function multibanner_register() {
+function multibannerc_register() {
 
     $labels = array(
-        'name' => _x('MultiBanners', 'post type general name'),
-        'singular_name' => _x('Multibanner', 'post type singular name'),
+        'name' => _x('MultiBanners Inferior', 'post type general name'),
+        'singular_name' => _x('Multibanner Inferior', 'post type singular name'),
         'add_new' => _x('Agregar nuevo banner', 'slideshow_two item'),
         'add_new_item' => __('Agregar nuevo banner'),
         'edit_item' => __('Editar banner'),
@@ -28,17 +28,17 @@ function multibanner_register() {
         'menu_icon'  => 'dashicons-images-alt',
         'hierarchical' => false,
         'menu_position' => null,
-        'taxonomies'	=> array( 'categoria-multibanner', 'etiqueta-multibanner', ), 
+        /*'taxonomies'	=> array( 'categoria-multibanner', 'etiqueta-multibanner', ), */
         'supports' => array('title', 'thumbnail'),
-        'rewrite' => array('slug' => 'multibanner', 'with_front' => false)
+        'rewrite' => array('slug' => 'multibannerc', 'with_front' => false)
       ); 
 
-    register_post_type( 'multibanner' , $args );
+    register_post_type( 'multibannerc' , $args );
 }
 
-add_action('init', 'multibanner_register');
+add_action('init', 'multibannerc_register');
 
-/*categorias personalizadas para inf*/
+/*categorias personalizadas para inf
 function categoria_multibanner() {
 	register_taxonomy(
 		'categoria-multibanner',
@@ -190,7 +190,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'multibanner',
+                    'value' => 'multibannerc',
                 ),
             ),
         ),

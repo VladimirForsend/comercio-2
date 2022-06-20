@@ -1,8 +1,8 @@
 <style>
-    <?php include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.css'; ?>
+    <?php include get_template_directory() . '/assets/modulos/modulo-multibanner3/multibanner3.css'; ?>
 </style>
 
-<div id="multibanner" class="container-fluid">
+<div id="multibannerc" class="container-fluid">
 <h2 class="multibanner-titulo">titulo</h2>
 
 <div class="multibanner-contenedor row">
@@ -12,7 +12,7 @@ $temp = $wp_query;
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $post_per_page = -1; // -1 shows all posts
 $args = array(
-    'post_type' => 'multibanner',
+    'post_type' => 'multibannerc',
     'orderby' => 'date',
     'order' => 'DESC',
     'paged' => $paged,
