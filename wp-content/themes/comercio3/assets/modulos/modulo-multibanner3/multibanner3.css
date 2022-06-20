@@ -1,6 +1,7 @@
 #multibannerc .multibanner-contenedor .banner a{
     position: relative;
     overflow: hidden;
+    display: block;
 }
 #multibannerc .multibanner-contenedor .banner a img{
     min-width: 100%;
@@ -13,4 +14,9 @@
 }
 #multibannerc .multibanner-contenedor .banner a:hover img{
     transform: scale(105%);
+}
+@media (max-width:787px){
+    #multibannerc .multibanner-contenedor .banner a{
+        display: unset;
+    }
 }
