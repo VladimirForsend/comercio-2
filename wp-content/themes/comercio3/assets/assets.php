@@ -1,7 +1,7 @@
 <?php
 
 /**
- * funcion slider.  chupalo fede
+ * funcion slider.
  */
 
 include get_template_directory() . '/assets/customizer/comercio-color-icon.php';
