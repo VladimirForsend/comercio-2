@@ -53,7 +53,5 @@ endif; ?>
         ?>
     </div>
 </main><!-- #main -->
-prueba merge
-prueba 4
 <?php
 get_footer();
