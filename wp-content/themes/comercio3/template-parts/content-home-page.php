@@ -25,4 +25,5 @@
         <!-- multibanners -->
         <?php include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.php'; ?>
         <!-- multibanners -->
+		prueba de github
 </article><!-- #post-<?php the_ID(); ?> -->
