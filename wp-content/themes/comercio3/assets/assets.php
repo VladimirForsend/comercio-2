@@ -203,6 +203,7 @@ include get_template_directory() . '/assets/woocommerce/campos-woocommerce.php';
 include get_template_directory() . '/assets/modulos/modulo-parallax-block/core-parallax-block.php';
 include get_template_directory() . '/assets/modulos/modulo-carrusel-logos/core-carrusel-logo.php';
 include get_template_directory() . '/assets/modulos/modulo-infobox/core-infobox.php';
+include get_template_directory() . '/assets/modulos/modulo-contador/core-contador.php';
 include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
 include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
 include get_template_directory() . '/assets/modulos/modulo-multibanner3/core-multibanner3.php';

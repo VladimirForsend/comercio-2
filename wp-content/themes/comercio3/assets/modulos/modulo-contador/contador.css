@@ -1,0 +1,74 @@
+#contador .contador-contenedor{
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #d7d7d7;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#contador .contador-contenedor .contador{
+    background-image: linear-gradient(to right, #ff0048, #ed0e58, #d91f63, #c22c6b, #ab356f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+#contador .contador-contenedor .contador #demo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contador .contador-contenedor .contador .dias, #contador .contador-contenedor .contador .horas, #contador .contador-contenedor .contador .minutos, #contador .contador-contenedor .contador .segundos{
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 7px;
+    border-radius: 5px;
+}
+#contador .contador-contenedor .contador .dias::after{
+    content:"DÍAS";
+}
+#contador .contador-contenedor .contador .horas::after{
+    content:"HORAS";
+}
+#contador .contador-contenedor .contador .minutos::after{
+    content:"MINUTOS";
+}
+#contador .contador-contenedor .contador .segundos::after{
+    content:"SEGUNDOS";
+}
+#contador .contador-contenedor .contador .dias::after, #contador .contador-contenedor .contador .horas::after, #contador .contador-contenedor .contador .minutos::after, #contador .contador-contenedor .contador .segundos::after{
+    position: absolute;
+    bottom: -15px;
+    z-index: 10;
+    color: white;
+    font-size: 9px;
+    width: 100%;
+    text-align: center;
+}
+#contador .contador-contenedor .contador .demititulo{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#contador .contador-contenedor .link .imagen{
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#contador .contador-contenedor .link:hover .imagen{
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.2);
+    transform: scale(105%);
+}
+#contador .contador-contenedor .vigencia{
+    text-align: center;
+    font-size: 12px;
+}

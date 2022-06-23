@@ -22,13 +22,16 @@
 			<a class="w-100 btn background-marca" href="<?php the_field('ver_todos_los_productos');?>">Ver todos los productos</a>
 		</div>
 
+        <!-- contador -->
+        <?php include get_template_directory() . '/assets/modulos/modulo-contador/contador.php'; ?>
+        <!-- contador -->
 		<!-- multibanners -->
         <?php include get_template_directory() . '/assets/modulos/modulo-multibanner2/multibanner2.php'; ?>
         <!-- multibanners -->
-        <!-- multibanners -->
+        <!-- multibanners 2 -->
         <?php include get_template_directory() . '/assets/modulos/modulo-multibanner/multibanner.php'; ?>
-        <!-- multibanners -->
-		<!-- multibanners -->
+        <!-- multibanners 2 -->
+		<!-- multibanners 3 -->
         <?php include get_template_directory() . '/assets/modulos/modulo-multibanner3/multibanner3.php'; ?>
-        <!-- multibanners -->
+        <!-- multibanners 3 -->
 </article><!-- #post-<?php the_ID(); ?> -->
