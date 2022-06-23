@@ -3,14 +3,14 @@
 function contador_register() {
 
     $labels = array(
-        'name' => _x('Contador', 'post type general name'),
-        'singular_name' => _x('Contador', 'post type singular name'),
-        'add_new' => _x('Agregar nuevo contador', 'slideshow_two item'),
-        'add_new_item' => __('Agregar nuevo contador'),
-        'edit_item' => __('Editar contador'),
-        'new_item' => __('Nuevo contador'),
-        'view_item' => __('Ver el contador'),
-        'search_items' => __('Buscar contadores'),
+        'name' => _x('Promo Contador', 'post type general name'),
+        'singular_name' => _x('Promo Contador', 'post type singular name'),
+        'add_new' => _x('Agregar nueva promo', 'slideshow_two item'),
+        'add_new_item' => __('Agregar nueva promo'),
+        'edit_item' => __('Editar promocion'),
+        'new_item' => __('Nueva promocion'),
+        'view_item' => __('Ver la promocion'),
+        'search_items' => __('Buscar promociones'),
         'not_found' =>  __('No se encontraron'),
         'not_found_in_trash' => __('No se encontraron en la basura'),
         'parent_item_colon' => ''

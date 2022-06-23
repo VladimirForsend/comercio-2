@@ -1,3 +1,4 @@
+<?php $contador = get_field('seccion_contador'); if(empty($contador)) {?>
 <style>
     <?php include get_template_directory() . '/assets/modulos/modulo-contador/contador.css'; ?>
 </style>
@@ -56,3 +57,4 @@ $wp_query = $temp ?>
 </div> 
 </div>
 </div>
+<?php }; ?>
