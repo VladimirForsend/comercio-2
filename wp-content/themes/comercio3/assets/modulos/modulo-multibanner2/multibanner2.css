@@ -1,3 +1,19 @@
+#multibannerb .multibanner-titulo{
+    position: relative; 
+    overflow: hidden;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#multibannerb .multibanner-titulo::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #656563;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    margin-left: 20px;
+}
 #multibannerb .multibanner-contenedor .banner a{
     position: relative;
     overflow: hidden;

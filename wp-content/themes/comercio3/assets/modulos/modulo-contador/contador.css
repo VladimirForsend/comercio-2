@@ -60,6 +60,12 @@
     text-align: center;
     margin-bottom: 5px;
 }
+#contador .contador-contenedor .contador .agotado{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 7px 30px;
+    border-radius: 10px;
+}
 #contador .contador-contenedor .link .imagen{
     border-radius: 10px;
     transition: 0.3s;

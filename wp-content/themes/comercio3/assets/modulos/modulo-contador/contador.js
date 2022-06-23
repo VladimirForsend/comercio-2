@@ -27,7 +27,7 @@ jQuery(function($) {
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+            document.getElementById("demo").innerHTML = "<div class='agotado'>Agotado</div>";
         }
         }, 1000);
     });

@@ -3,7 +3,7 @@
 </style>
 
 <div id="multibannerb" class="container-fluid">
-<h2 class="multibanner-titulo">titulo</h2>
+<h2 class="multibanner-titulo"><?php the_field('titulo_multibannera'); ?></h2>
 
 <div class="multibanner-contenedor row">
 
