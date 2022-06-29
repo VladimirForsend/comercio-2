@@ -47,4 +47,4 @@
         <div class="row my-3">
             <?php include get_template_directory() . '/assets/modulos/modulo-infobox/loop-infobox.php'; ?>
         </div>
-    </div>
+    </div> 
