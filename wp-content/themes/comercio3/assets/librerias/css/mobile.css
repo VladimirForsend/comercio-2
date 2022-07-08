@@ -260,7 +260,6 @@
         /*position: absolute;*/
         z-index: 100;
         width: 100%;
-        background-color: transparent;
         border-bottom: 0px solid #ededed;
     }
     
@@ -1168,23 +1167,6 @@
         color: white;
         background-color: var(--color-disponible);
         box-shadow: 0 7px 16px 0 rgba(0, 0, 0, .2), 0 1px 3px 0 rgba(0, 0, 0, .1);
-    }
-    
-    .woocommerce ul.products li.product .onsale {
-        position: absolute;
-        z-index: 1;
-        background-color: red;
-        padding: .3rem;
-        font-size: .9rem;
-        top: 150px;
-        left: 0px;
-        color: #fff;
-        font-weight: 900;
-        right: unset;
-        margin: 0;
-        border-radius: unset;
-        line-height: normal;
-        min-height: auto;
     }
     
     .color-marca {

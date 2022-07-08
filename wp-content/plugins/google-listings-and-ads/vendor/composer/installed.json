@@ -2,26 +2,34 @@
     "packages": [
         {
             "name": "automattic/jetpack-a8c-mc-stats",
-            "version": "1.4.1",
-            "version_normalized": "1.4.1.0",
+            "version": "v1.4.13",
+            "version_normalized": "1.4.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-a8c-mc-stats.git",
-                "reference": "b2f6b20aa3046848391593e6a18f87ae3797e888"
+                "reference": "64ee9a83861c6b2c8744e2ebc25157806f3548e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-a8c-mc-stats/zipball/b2f6b20aa3046848391593e6a18f87ae3797e888",
-                "reference": "b2f6b20aa3046848391593e6a18f87ae3797e888",
+                "url": "https://api.github.com/repos/Automattic/jetpack-a8c-mc-stats/zipball/64ee9a83861c6b2c8744e2ebc25157806f3548e0",
+                "reference": "64ee9a83861c6b2c8744e2ebc25157806f3548e0",
                 "shasum": ""
             },
             "require-dev": {
-                "yoast/phpunit-polyfills": "0.2.0"
+                "automattic/jetpack-changelogger": "^3.1",
+                "yoast/phpunit-polyfills": "1.0.3"
             },
-            "time": "2021-02-05T19:06:50+00:00",
-            "type": "library",
+            "time": "2022-04-26T14:33:27+00:00",
+            "type": "jetpack-library",
             "extra": {
-                "mirror-repo": "Automattic/jetpack-a8c-mc-stats"
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-a8c-mc-stats",
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-a8c-mc-stats/compare/v${old}...v${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
             },
             "installation-source": "dist",
             "autoload": {
@@ -35,36 +43,45 @@
             ],
             "description": "Used to record internal usage stats for Automattic. Not visible to site owners.",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-a8c-mc-stats/tree/1.4.1"
+                "source": "https://github.com/Automattic/jetpack-a8c-mc-stats/tree/v1.4.13"
             },
             "install-path": "../automattic/jetpack-a8c-mc-stats"
         },
         {
-            "name": "automattic/jetpack-assets",
-            "version": "v1.11.2",
-            "version_normalized": "1.11.2.0",
+            "name": "automattic/jetpack-admin-ui",
+            "version": "v0.2.7",
+            "version_normalized": "0.2.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Automattic/jetpack-assets.git",
-                "reference": "833a6840b5f39ef05b2a65def8a1e61dc7c45a7a"
+                "url": "https://github.com/Automattic/jetpack-admin-ui.git",
+                "reference": "56a60ee4d03ac2be62cb341e3df0f2fb5cc851f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-assets/zipball/833a6840b5f39ef05b2a65def8a1e61dc7c45a7a",
-                "reference": "833a6840b5f39ef05b2a65def8a1e61dc7c45a7a",
+                "url": "https://api.github.com/repos/Automattic/jetpack-admin-ui/zipball/56a60ee4d03ac2be62cb341e3df0f2fb5cc851f8",
+                "reference": "56a60ee4d03ac2be62cb341e3df0f2fb5cc851f8",
                 "shasum": ""
             },
-            "require": {
-                "automattic/jetpack-constants": "1.6.2"
-            },
             "require-dev": {
-                "brain/monkey": "2.6.0",
-                "yoast/phpunit-polyfills": "0.2.0"
+                "automattic/jetpack-changelogger": "^3.1",
+                "automattic/wordbless": "dev-master",
+                "yoast/phpunit-polyfills": "1.0.3"
             },
-            "time": "2021-02-23T14:58:20+00:00",
-            "type": "library",
+            "time": "2022-04-26T14:33:43+00:00",
+            "type": "jetpack-library",
             "extra": {
-                "mirror-repo": "Automattic/jetpack-assets"
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-admin-ui",
+                "textdomain": "jetpack-admin-ui",
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-admin-ui/compare/${old}...${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "0.2.x-dev"
+                },
+                "version-constants": {
+                    "::PACKAGE_VERSION": "src/class-admin-menu.php"
+                }
             },
             "installation-source": "dist",
             "autoload": {
@@ -76,47 +93,55 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Asset management utilities for Jetpack ecosystem packages",
+            "description": "Generic Jetpack wp-admin UI elements",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-assets/tree/v1.11.2"
+                "source": "https://github.com/Automattic/jetpack-admin-ui/tree/v0.2.7"
             },
-            "install-path": "../automattic/jetpack-assets"
+            "install-path": "../automattic/jetpack-admin-ui"
         },
         {
             "name": "automattic/jetpack-autoloader",
-            "version": "v2.10.0",
-            "version_normalized": "2.10.0.0",
+            "version": "v2.11.5",
+            "version_normalized": "2.11.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-autoloader.git",
-                "reference": "6409c42b32ed82aff50869fd0a6a2e5c7a96fbd6"
+                "reference": "664c7cf0ff94b4f2f7c5b359bef3616822004a04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/6409c42b32ed82aff50869fd0a6a2e5c7a96fbd6",
-                "reference": "6409c42b32ed82aff50869fd0a6a2e5c7a96fbd6",
+                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/664c7cf0ff94b4f2f7c5b359bef3616822004a04",
+                "reference": "664c7cf0ff94b4f2f7c5b359bef3616822004a04",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1 || ^2.0"
             },
             "require-dev": {
-                "yoast/phpunit-polyfills": "0.2.0"
+                "automattic/jetpack-changelogger": "^3.1",
+                "yoast/phpunit-polyfills": "1.0.3"
             },
-            "time": "2021-02-09T18:24:48+00:00",
+            "time": "2022-05-18T11:11:44+00:00",
             "type": "composer-plugin",
             "extra": {
+                "autotagger": true,
                 "class": "Automattic\\Jetpack\\Autoloader\\CustomAutoloaderPlugin",
-                "mirror-repo": "Automattic/jetpack-autoloader"
+                "mirror-repo": "Automattic/jetpack-autoloader",
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-autoloader/compare/v${old}...v${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "2.11.x-dev"
+                }
             },
             "installation-source": "dist",
             "autoload": {
-                "classmap": [
-                    "src/AutoloadGenerator.php"
-                ],
                 "psr-4": {
                     "Automattic\\Jetpack\\Autoloader\\": "src"
-                }
+                },
+                "classmap": [
+                    "src/AutoloadGenerator.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -124,29 +149,40 @@
             ],
             "description": "Creates a custom autoloader for a plugin or theme.",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-autoloader/tree/v2.10.0"
+                "source": "https://github.com/Automattic/jetpack-autoloader/tree/v2.11.5"
             },
             "install-path": "../automattic/jetpack-autoloader"
         },
         {
             "name": "automattic/jetpack-config",
-            "version": "v1.4.3",
-            "version_normalized": "1.4.3.0",
+            "version": "v1.9.0",
+            "version_normalized": "1.9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-config.git",
-                "reference": "6bc77aa73d90510c9488e2d8fdaad4b056d3a066"
+                "reference": "415d06ba5363b2b204d4763aa4d65bfbdd4b769a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-config/zipball/6bc77aa73d90510c9488e2d8fdaad4b056d3a066",
-                "reference": "6bc77aa73d90510c9488e2d8fdaad4b056d3a066",
+                "url": "https://api.github.com/repos/Automattic/jetpack-config/zipball/415d06ba5363b2b204d4763aa4d65bfbdd4b769a",
+                "reference": "415d06ba5363b2b204d4763aa4d65bfbdd4b769a",
                 "shasum": ""
             },
-            "time": "2021-01-19T14:25:05+00:00",
-            "type": "library",
+            "require-dev": {
+                "automattic/jetpack-changelogger": "^3.1"
+            },
+            "time": "2022-05-18T11:11:22+00:00",
+            "type": "jetpack-library",
             "extra": {
-                "mirror-repo": "Automattic/jetpack-config"
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-config",
+                "textdomain": "jetpack-config",
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-config/compare/v${old}...v${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
             },
             "installation-source": "dist",
             "autoload": {
@@ -160,51 +196,61 @@
             ],
             "description": "Jetpack configuration package that initializes other packages and configures Jetpack's functionality. Can be used as a base for all variants of Jetpack package usage.",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-config/tree/v1.4.3"
+                "source": "https://github.com/Automattic/jetpack-config/tree/v1.9.0"
             },
             "install-path": "../automattic/jetpack-config"
         },
         {
             "name": "automattic/jetpack-connection",
-            "version": "v1.24.0",
-            "version_normalized": "1.24.0.0",
+            "version": "v1.40.5",
+            "version_normalized": "1.40.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-connection.git",
-                "reference": "5ffc22ecc7210cb229ab4a9833e2ba1def817ff8"
+                "reference": "461d33c0aa9b8f706d1b62a317a6c770f990ce4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-connection/zipball/5ffc22ecc7210cb229ab4a9833e2ba1def817ff8",
-                "reference": "5ffc22ecc7210cb229ab4a9833e2ba1def817ff8",
+                "url": "https://api.github.com/repos/Automattic/jetpack-connection/zipball/461d33c0aa9b8f706d1b62a317a6c770f990ce4d",
+                "reference": "461d33c0aa9b8f706d1b62a317a6c770f990ce4d",
                 "shasum": ""
             },
             "require": {
-                "automattic/jetpack-constants": "1.6.2",
-                "automattic/jetpack-heartbeat": "1.3.3",
-                "automattic/jetpack-options": "1.11.2",
-                "automattic/jetpack-roles": "1.4.2",
-                "automattic/jetpack-status": "1.7.2",
-                "automattic/jetpack-tracking": "1.13.2"
+                "automattic/jetpack-a8c-mc-stats": "^1.4",
+                "automattic/jetpack-admin-ui": "^0.2",
+                "automattic/jetpack-constants": "^1.6",
+                "automattic/jetpack-redirect": "^1.7",
+                "automattic/jetpack-roles": "^1.4",
+                "automattic/jetpack-status": "^1.13"
             },
             "require-dev": {
+                "automattic/jetpack-changelogger": "^3.1",
                 "automattic/wordbless": "@dev",
-                "brain/monkey": "^2.6",
-                "yoast/phpunit-polyfills": "0.2.0"
+                "brain/monkey": "2.6.1",
+                "yoast/phpunit-polyfills": "1.0.3"
             },
-            "time": "2021-02-23T15:05:16+00:00",
-            "type": "library",
+            "time": "2022-06-08T15:15:35+00:00",
+            "type": "jetpack-library",
             "extra": {
-                "mirror-repo": "Automattic/jetpack-connection"
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-connection",
+                "textdomain": "jetpack-connection",
+                "version-constants": {
+                    "::PACKAGE_VERSION": "src/class-package-version.php"
+                },
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-connection/compare/v${old}...v${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "1.40.x-dev"
+                }
             },
             "installation-source": "dist",
             "autoload": {
-                "files": [
-                    "legacy/load-ixr.php"
-                ],
                 "classmap": [
                     "legacy",
-                    "src/"
+                    "src/",
+                    "src/webhooks"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -213,33 +259,41 @@
             ],
             "description": "Everything needed to connect to the Jetpack infrastructure",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-connection/tree/v1.24.0"
+                "source": "https://github.com/Automattic/jetpack-connection/tree/v1.40.5"
             },
             "install-path": "../automattic/jetpack-connection"
         },
         {
             "name": "automattic/jetpack-constants",
-            "version": "v1.6.2",
-            "version_normalized": "1.6.2.0",
+            "version": "v1.6.16",
+            "version_normalized": "1.6.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-constants.git",
-                "reference": "84c8f09c5a6467104094243912fdcfe8eaed945b"
+                "reference": "f719d15636026c2e47d927a24edc54898d859a0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-constants/zipball/84c8f09c5a6467104094243912fdcfe8eaed945b",
-                "reference": "84c8f09c5a6467104094243912fdcfe8eaed945b",
+                "url": "https://api.github.com/repos/Automattic/jetpack-constants/zipball/f719d15636026c2e47d927a24edc54898d859a0e",
+                "reference": "f719d15636026c2e47d927a24edc54898d859a0e",
                 "shasum": ""
             },
             "require-dev": {
-                "brain/monkey": "2.6.0",
-                "yoast/phpunit-polyfills": "0.2.0"
+                "automattic/jetpack-changelogger": "^3.1",
+                "brain/monkey": "2.6.1",
+                "yoast/phpunit-polyfills": "1.0.3"
             },
-            "time": "2021-02-05T19:07:24+00:00",
-            "type": "library",
+            "time": "2022-04-26T14:33:36+00:00",
+            "type": "jetpack-library",
             "extra": {
-                "mirror-repo": "Automattic/jetpack-constants"
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-constants",
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-constants/compare/v${old}...v${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
             },
             "installation-source": "dist",
             "autoload": {
@@ -253,33 +307,44 @@
             ],
             "description": "A wrapper for defining constants in a more testable way.",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-constants/tree/v1.6.2"
+                "source": "https://github.com/Automattic/jetpack-constants/tree/v1.6.16"
             },
             "install-path": "../automattic/jetpack-constants"
         },
         {
-            "name": "automattic/jetpack-heartbeat",
-            "version": "v1.3.3",
-            "version_normalized": "1.3.3.0",
+            "name": "automattic/jetpack-redirect",
+            "version": "v1.7.15",
+            "version_normalized": "1.7.15.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Automattic/jetpack-heartbeat.git",
-                "reference": "d6e906c15a539bee5f52957126ba1b43d11e63da"
+                "url": "https://github.com/Automattic/jetpack-redirect.git",
+                "reference": "d9c416ba23831cce2608c6fd689754f15dcb8498"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-heartbeat/zipball/d6e906c15a539bee5f52957126ba1b43d11e63da",
-                "reference": "d6e906c15a539bee5f52957126ba1b43d11e63da",
+                "url": "https://api.github.com/repos/Automattic/jetpack-redirect/zipball/d9c416ba23831cce2608c6fd689754f15dcb8498",
+                "reference": "d9c416ba23831cce2608c6fd689754f15dcb8498",
                 "shasum": ""
             },
             "require": {
-                "automattic/jetpack-a8c-mc-stats": "1.4.1",
-                "automattic/jetpack-options": "1.11.2"
+                "automattic/jetpack-status": "^1.13"
             },
-            "time": "2021-02-23T15:01:22+00:00",
-            "type": "library",
+            "require-dev": {
+                "automattic/jetpack-changelogger": "^3.1",
+                "brain/monkey": "2.6.1",
+                "yoast/phpunit-polyfills": "1.0.3"
+            },
+            "time": "2022-05-10T11:30:40+00:00",
+            "type": "jetpack-library",
             "extra": {
-                "mirror-repo": "Automattic/jetpack-heartbeat"
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-redirect",
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-redirect/compare/v${old}...v${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "1.7.x-dev"
+                }
             },
             "installation-source": "dist",
             "autoload": {
@@ -291,77 +356,43 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "This adds a cronjob that sends a batch of internal automattic stats to wp.com once a day",
+            "description": "Utilities to build URLs to the jetpack.com/redirect/ service",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-heartbeat/tree/v1.3.3"
+                "source": "https://github.com/Automattic/jetpack-redirect/tree/v1.7.15"
             },
-            "install-path": "../automattic/jetpack-heartbeat"
-        },
-        {
-            "name": "automattic/jetpack-options",
-            "version": "v1.11.2",
-            "version_normalized": "1.11.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Automattic/jetpack-options.git",
-                "reference": "1889f3648782b5ceaac255f2a5ee96c1de8cca1e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-options/zipball/1889f3648782b5ceaac255f2a5ee96c1de8cca1e",
-                "reference": "1889f3648782b5ceaac255f2a5ee96c1de8cca1e",
-                "shasum": ""
-            },
-            "require": {
-                "automattic/jetpack-constants": "1.6.2"
-            },
-            "require-dev": {
-                "yoast/phpunit-polyfills": "0.2.0"
-            },
-            "time": "2021-02-23T15:00:26+00:00",
-            "type": "library",
-            "extra": {
-                "mirror-repo": "Automattic/jetpack-options"
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "classmap": [
-                    "legacy"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "A wrapper for wp-options to manage specific Jetpack options.",
-            "support": {
-                "source": "https://github.com/Automattic/jetpack-options/tree/v1.11.2"
-            },
-            "install-path": "../automattic/jetpack-options"
+            "install-path": "../automattic/jetpack-redirect"
         },
         {
             "name": "automattic/jetpack-roles",
-            "version": "v1.4.2",
-            "version_normalized": "1.4.2.0",
+            "version": "v1.4.15",
+            "version_normalized": "1.4.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-roles.git",
-                "reference": "ad4e0c4483945b24db10c09696558a2f381236ee"
+                "reference": "6ffbb2fef269334e3528380bfd7a064e3c904dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-roles/zipball/ad4e0c4483945b24db10c09696558a2f381236ee",
-                "reference": "ad4e0c4483945b24db10c09696558a2f381236ee",
+                "url": "https://api.github.com/repos/Automattic/jetpack-roles/zipball/6ffbb2fef269334e3528380bfd7a064e3c904dce",
+                "reference": "6ffbb2fef269334e3528380bfd7a064e3c904dce",
                 "shasum": ""
             },
             "require-dev": {
-                "brain/monkey": "2.6.0",
-                "yoast/phpunit-polyfills": "0.2.0"
+                "automattic/jetpack-changelogger": "^3.1",
+                "brain/monkey": "2.6.1",
+                "yoast/phpunit-polyfills": "1.0.3"
             },
-            "time": "2021-02-05T19:07:59+00:00",
-            "type": "library",
+            "time": "2022-04-26T14:33:35+00:00",
+            "type": "jetpack-library",
             "extra": {
-                "mirror-repo": "Automattic/jetpack-roles"
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-roles",
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-roles/compare/v${old}...v${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
             },
             "installation-source": "dist",
             "autoload": {
@@ -375,33 +406,44 @@
             ],
             "description": "Utilities, related with user roles and capabilities.",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-roles/tree/v1.4.2"
+                "source": "https://github.com/Automattic/jetpack-roles/tree/v1.4.15"
             },
             "install-path": "../automattic/jetpack-roles"
         },
         {
             "name": "automattic/jetpack-status",
-            "version": "v1.7.2",
-            "version_normalized": "1.7.2.0",
+            "version": "v1.13.6",
+            "version_normalized": "1.13.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-status.git",
-                "reference": "a0f1f7450f045afc2669135ba576632ca0889506"
+                "reference": "6005840740548864d2a67090d87b59a6f141e5c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-status/zipball/a0f1f7450f045afc2669135ba576632ca0889506",
-                "reference": "a0f1f7450f045afc2669135ba576632ca0889506",
+                "url": "https://api.github.com/repos/Automattic/jetpack-status/zipball/6005840740548864d2a67090d87b59a6f141e5c4",
+                "reference": "6005840740548864d2a67090d87b59a6f141e5c4",
                 "shasum": ""
             },
-            "require-dev": {
-                "brain/monkey": "2.6.0",
-                "yoast/phpunit-polyfills": "0.2.0"
+            "require": {
+                "automattic/jetpack-constants": "^1.6"
             },
-            "time": "2021-02-05T19:08:03+00:00",
-            "type": "library",
+            "require-dev": {
+                "automattic/jetpack-changelogger": "^3.1",
+                "brain/monkey": "2.6.1",
+                "yoast/phpunit-polyfills": "1.0.3"
+            },
+            "time": "2022-05-24T14:04:09+00:00",
+            "type": "jetpack-library",
             "extra": {
-                "mirror-repo": "Automattic/jetpack-status"
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-status",
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-status/compare/v${old}...v${new}"
+                },
+                "branch-alias": {
+                    "dev-master": "1.13.x-dev"
+                }
             },
             "installation-source": "dist",
             "autoload": {
@@ -415,125 +457,40 @@
             ],
             "description": "Used to retrieve information about the current status of Jetpack and the site overall.",
             "support": {
-                "source": "https://github.com/Automattic/jetpack-status/tree/v1.7.2"
+                "source": "https://github.com/Automattic/jetpack-status/tree/v1.13.6"
             },
             "install-path": "../automattic/jetpack-status"
         },
         {
-            "name": "automattic/jetpack-terms-of-service",
-            "version": "v1.9.3",
-            "version_normalized": "1.9.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Automattic/jetpack-terms-of-service.git",
-                "reference": "f8435228d918a5bd32912339b1124d35911efde1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-terms-of-service/zipball/f8435228d918a5bd32912339b1124d35911efde1",
-                "reference": "f8435228d918a5bd32912339b1124d35911efde1",
-                "shasum": ""
-            },
-            "require": {
-                "automattic/jetpack-options": "1.11.2",
-                "automattic/jetpack-status": "1.7.2"
-            },
-            "require-dev": {
-                "brain/monkey": "2.6.0",
-                "yoast/phpunit-polyfills": "0.2.0"
-            },
-            "time": "2021-02-23T15:02:14+00:00",
-            "type": "library",
-            "extra": {
-                "mirror-repo": "Automattic/jetpack-terms-of-service"
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Everything need to manage the terms of service state",
-            "support": {
-                "source": "https://github.com/Automattic/jetpack-terms-of-service/tree/v1.9.3"
-            },
-            "install-path": "../automattic/jetpack-terms-of-service"
-        },
-        {
-            "name": "automattic/jetpack-tracking",
-            "version": "v1.13.2",
-            "version_normalized": "1.13.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Automattic/jetpack-tracking.git",
-                "reference": "b2dc6688098798111e21bd7d5d052fb828fa0932"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-tracking/zipball/b2dc6688098798111e21bd7d5d052fb828fa0932",
-                "reference": "b2dc6688098798111e21bd7d5d052fb828fa0932",
-                "shasum": ""
-            },
-            "require": {
-                "automattic/jetpack-assets": "1.11.2",
-                "automattic/jetpack-options": "1.11.2",
-                "automattic/jetpack-status": "1.7.2",
-                "automattic/jetpack-terms-of-service": "1.9.3"
-            },
-            "require-dev": {
-                "yoast/phpunit-polyfills": "0.2.0"
-            },
-            "time": "2021-02-23T15:03:25+00:00",
-            "type": "library",
-            "extra": {
-                "mirror-repo": "Automattic/jetpack-tracking"
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "classmap": [
-                    "legacy",
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Tracking for Jetpack",
-            "support": {
-                "source": "https://github.com/Automattic/jetpack-tracking/tree/v1.13.2"
-            },
-            "install-path": "../automattic/jetpack-tracking"
-        },
-        {
             "name": "firebase/php-jwt",
-            "version": "v5.5.1",
-            "version_normalized": "5.5.1.0",
+            "version": "v6.2.0",
+            "version_normalized": "6.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "83b609028194aa042ea33b5af2d41a7427de80e6"
+                "reference": "d28e6df83830252650da4623c78aaaf98fb385f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/83b609028194aa042ea33b5af2d41a7427de80e6",
-                "reference": "83b609028194aa042ea33b5af2d41a7427de80e6",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/d28e6df83830252650da4623c78aaaf98fb385f3",
+                "reference": "d28e6df83830252650da4623c78aaaf98fb385f3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.1||^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=4.8 <=9"
+                "guzzlehttp/guzzle": "^6.5||^7.4",
+                "phpspec/prophecy-phpunit": "^1.1",
+                "phpunit/phpunit": "^7.5||^9.5",
+                "psr/cache": "^1.0||^2.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0"
             },
             "suggest": {
                 "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
             },
-            "time": "2021-11-08T20:18:51+00:00",
+            "time": "2022-05-13T20:54:50+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -565,43 +522,42 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v5.5.1"
+                "source": "https://github.com/firebase/php-jwt/tree/v6.2.0"
             },
             "install-path": "../firebase/php-jwt"
         },
         {
             "name": "google/apiclient",
-            "version": "v2.12.1",
-            "version_normalized": "2.12.1.0",
+            "version": "v2.12.6",
+            "version_normalized": "2.12.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client.git",
-                "reference": "1530583a711f4414407112c4068464bcbace1c71"
+                "reference": "f92aa126903a9e2da5bd41a280d9633cb249e79e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/1530583a711f4414407112c4068464bcbace1c71",
-                "reference": "1530583a711f4414407112c4068464bcbace1c71",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/f92aa126903a9e2da5bd41a280d9633cb249e79e",
+                "reference": "f92aa126903a9e2da5bd41a280d9633cb249e79e",
                 "shasum": ""
             },
             "require": {
-                "firebase/php-jwt": "~2.0||~3.0||~4.0||~5.0",
+                "firebase/php-jwt": "~2.0||~3.0||~4.0||~5.0||~6.0",
                 "google/apiclient-services": "~0.200",
                 "google/auth": "^1.10",
                 "guzzlehttp/guzzle": "~5.3.3||~6.0||~7.0",
-                "guzzlehttp/psr7": "^1.7||^2.0.0",
-                "monolog/monolog": "^1.17||^2.0",
+                "guzzlehttp/psr7": "^1.8.4||^2.2.1",
+                "monolog/monolog": "^1.17||^2.0||^3.0",
                 "php": "^5.6|^7.0|^8.0",
                 "phpseclib/phpseclib": "~2.0||^3.0.2"
             },
             "require-dev": {
                 "cache/filesystem-adapter": "^0.3.2|^1.1",
                 "composer/composer": "^1.10.22",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
                 "phpcompatibility/php-compatibility": "^9.2",
                 "phpspec/prophecy-phpunit": "^1.1||^2.0",
                 "phpunit/phpunit": "^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
-                "squizlabs/php_codesniffer": "~2.3",
+                "squizlabs/php_codesniffer": "^3.0",
                 "symfony/css-selector": "~2.1",
                 "symfony/dom-crawler": "~2.1",
                 "yoast/phpunit-polyfills": "^1.0"
@@ -609,7 +565,7 @@
             "suggest": {
                 "cache/filesystem-adapter": "For caching certs and tokens (using Google\\Client::setCache)"
             },
-            "time": "2021-12-02T03:34:25+00:00",
+            "time": "2022-06-06T20:00:19+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -618,12 +574,12 @@
             },
             "installation-source": "dist",
             "autoload": {
-                "psr-4": {
-                    "Google\\": "src/"
-                },
                 "files": [
                     "src/aliases.php"
                 ],
+                "psr-4": {
+                    "Google\\": "src/"
+                },
                 "classmap": [
                     "src/aliases.php"
                 ]
@@ -639,23 +595,23 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client/issues",
-                "source": "https://github.com/googleapis/google-api-php-client/tree/v2.12.1"
+                "source": "https://github.com/googleapis/google-api-php-client/tree/v2.12.6"
             },
             "install-path": "../google/apiclient"
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.230.0",
-            "version_normalized": "0.230.0.0",
+            "version": "v0.252.0",
+            "version_normalized": "0.252.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "ec64bbf1d6af9475bee7b1ce4fc0ed8a0a8d8889"
+                "reference": "9941c959f6a1f781e49019b78f453d54554dff73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/ec64bbf1d6af9475bee7b1ce4fc0ed8a0a8d8889",
-                "reference": "ec64bbf1d6af9475bee7b1ce4fc0ed8a0a8d8889",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/9941c959f6a1f781e49019b78f453d54554dff73",
+                "reference": "9941c959f6a1f781e49019b78f453d54554dff73",
                 "shasum": ""
             },
             "require": {
@@ -664,7 +620,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^5.7||^8.5.13"
             },
-            "time": "2021-12-21T12:26:12+00:00",
+            "time": "2022-06-06T01:20:11+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -686,44 +642,46 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.230.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.252.0"
             },
             "install-path": "../google/apiclient-services"
         },
         {
             "name": "google/auth",
-            "version": "v1.18.0",
-            "version_normalized": "1.18.0.0",
+            "version": "v1.21.0",
+            "version_normalized": "1.21.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "21dd478e77b0634ed9e3a68613f74ed250ca9347"
+                "reference": "73392bad2eb6852eea9084b6bbdec752515cb849"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/21dd478e77b0634ed9e3a68613f74ed250ca9347",
-                "reference": "21dd478e77b0634ed9e3a68613f74ed250ca9347",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/73392bad2eb6852eea9084b6bbdec752515cb849",
+                "reference": "73392bad2eb6852eea9084b6bbdec752515cb849",
                 "shasum": ""
             },
             "require": {
-                "firebase/php-jwt": "~2.0|~3.0|~4.0|~5.0",
-                "guzzlehttp/guzzle": "^5.3.1|^6.2.1|^7.0",
+                "firebase/php-jwt": "^5.5||^6.0",
+                "guzzlehttp/guzzle": "^6.2.1|^7.0",
                 "guzzlehttp/psr7": "^1.7|^2.0",
-                "php": ">=5.4",
-                "psr/cache": "^1.0|^2.0",
+                "php": "^7.1||^8.0",
+                "psr/cache": "^1.0|^2.0|^3.0",
                 "psr/http-message": "^1.0"
             },
             "require-dev": {
                 "guzzlehttp/promises": "0.1.1|^1.3",
                 "kelvinmo/simplejwt": "^0.2.5|^0.5.1",
                 "phpseclib/phpseclib": "^2.0.31",
-                "phpunit/phpunit": "^4.8.36|^5.7",
-                "sebastian/comparator": ">=1.2.3"
+                "phpspec/prophecy-phpunit": "^1.1",
+                "phpunit/phpunit": "^7.5||^8.5",
+                "sebastian/comparator": ">=1.2.3",
+                "squizlabs/php_codesniffer": "^3.5"
             },
             "suggest": {
                 "phpseclib/phpseclib": "May be used in place of OpenSSL for signing strings or for token management. Please require version ^2."
             },
-            "time": "2021-08-24T18:03:18+00:00",
+            "time": "2022-04-13T20:35:52+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -743,35 +701,35 @@
                 "oauth2"
             ],
             "support": {
-                "docs": "https://googleapis.github.io/google-auth-library-php/master/",
+                "docs": "https://googleapis.github.io/google-auth-library-php/main/",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.18.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.21.0"
             },
             "install-path": "../google/auth"
         },
         {
             "name": "google/common-protos",
-            "version": "1.4.0",
-            "version_normalized": "1.4.0.0",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/common-protos-php.git",
-                "reference": "b1ee63636d94fe88f6cff600a0f23fae06b6fa2e"
+                "reference": "4bad82f73a10f8ea4e6d078da93406a16c996044"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/common-protos-php/zipball/b1ee63636d94fe88f6cff600a0f23fae06b6fa2e",
-                "reference": "b1ee63636d94fe88f6cff600a0f23fae06b6fa2e",
+                "url": "https://api.github.com/repos/googleapis/common-protos-php/zipball/4bad82f73a10f8ea4e6d078da93406a16c996044",
+                "reference": "4bad82f73a10f8ea4e6d078da93406a16c996044",
                 "shasum": ""
             },
             "require": {
-                "google/protobuf": "^3.6.1"
+                "google/protobuf": "^3.6.1, !=3.20.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.36",
+                "phpunit/phpunit": "^4.8.36||^8.5",
                 "sami/sami": "*"
             },
-            "time": "2021-11-18T21:49:24+00:00",
+            "time": "2022-05-13T21:07:15+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -791,33 +749,33 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/common-protos-php/issues",
-                "source": "https://github.com/googleapis/common-protos-php/tree/1.4.0"
+                "source": "https://github.com/googleapis/common-protos-php/tree/2.1.0"
             },
             "install-path": "../google/common-protos"
         },
         {
             "name": "google/gax",
-            "version": "v1.10.0",
-            "version_normalized": "1.10.0.0",
+            "version": "v1.12.2",
+            "version_normalized": "1.12.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/gax-php.git",
-                "reference": "5222f7712e73d266490c742dc9bc602602ae00a5"
+                "reference": "38ea1c12e7d24caeb3abbcac44a6a3536a8ef2a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/5222f7712e73d266490c742dc9bc602602ae00a5",
-                "reference": "5222f7712e73d266490c742dc9bc602602ae00a5",
+                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/38ea1c12e7d24caeb3abbcac44a6a3536a8ef2a7",
+                "reference": "38ea1c12e7d24caeb3abbcac44a6a3536a8ef2a7",
                 "shasum": ""
             },
             "require": {
                 "google/auth": "^1.18.0",
-                "google/common-protos": "^1.0",
+                "google/common-protos": "^1.0||^2.0",
                 "google/grpc-gcp": "^0.2",
                 "google/protobuf": "^3.12.2",
                 "grpc/grpc": "^1.13",
                 "guzzlehttp/promises": "^1.3",
-                "guzzlehttp/psr7": "^1.7.0|^2",
+                "guzzlehttp/psr7": "^1.7.0||^2",
                 "php": ">=5.5"
             },
             "conflict": {
@@ -827,7 +785,7 @@
                 "phpunit/phpunit": "^4.8.36",
                 "squizlabs/php_codesniffer": "3.*"
             },
-            "time": "2021-10-27T17:33:04+00:00",
+            "time": "2022-05-17T03:48:18+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -847,7 +805,7 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/gax-php/issues",
-                "source": "https://github.com/googleapis/gax-php/tree/v1.10.0"
+                "source": "https://github.com/googleapis/gax-php/tree/v1.12.2"
             },
             "install-path": "../google/gax"
         },
@@ -901,29 +859,29 @@
         },
         {
             "name": "google/protobuf",
-            "version": "v3.19.3",
-            "version_normalized": "3.19.3.0",
+            "version": "v3.21.1",
+            "version_normalized": "3.21.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/protocolbuffers/protobuf-php.git",
-                "reference": "c6d35bfdf41f8cb9dcf71ebc3631f8b9d80aa040"
+                "reference": "68f71264d8816f001177d68ce99d25b28e212d4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/c6d35bfdf41f8cb9dcf71ebc3631f8b9d80aa040",
-                "reference": "c6d35bfdf41f8cb9dcf71ebc3631f8b9d80aa040",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/68f71264d8816f001177d68ce99d25b28e212d4c",
+                "reference": "68f71264d8816f001177d68ce99d25b28e212d4c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=7.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=4.8.0"
+                "phpunit/phpunit": ">=5.0.0"
             },
             "suggest": {
                 "ext-bcmath": "Need to support JSON deserialization"
             },
-            "time": "2022-01-11T17:40:06+00:00",
+            "time": "2022-05-27T22:57:31+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -943,7 +901,7 @@
             ],
             "support": {
                 "issues": "https://github.com/protocolbuffers/protobuf-php/issues",
-                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v3.19.3"
+                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v3.21.1"
             },
             "install-path": "../google/protobuf"
         },
@@ -1062,17 +1020,17 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.1",
-            "version_normalized": "7.4.1.0",
+            "version": "7.4.4",
+            "version_normalized": "7.4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79"
+                "reference": "e3ff079b22820c2029d4c2a87796b6a0b8716ad8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/e3ff079b22820c2029d4c2a87796b6a0b8716ad8",
+                "reference": "e3ff079b22820c2029d4c2a87796b6a0b8716ad8",
                 "shasum": ""
             },
             "require": {
@@ -1098,7 +1056,7 @@
                 "ext-intl": "Required for Internationalized Domain Name (IDN) support",
                 "psr/log": "Required for using the Log middleware"
             },
-            "time": "2021-12-06T18:43:05+00:00",
+            "time": "2022-06-09T21:39:15+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1107,10 +1065,10 @@
             },
             "installation-source": "dist",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\GuzzleHttp\\": "src/"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1167,7 +1125,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.4"
             },
             "funding": [
                 {
@@ -1215,10 +1173,10 @@
             },
             "installation-source": "dist",
             "autoload": {
+                "files": [],
                 "psr-4": {
                     "Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\GuzzleHttp\\Promise\\": "src/"
-                },
-                "files": []
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1272,17 +1230,17 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
-            "version_normalized": "2.1.0.0",
+            "version": "2.3.0",
+            "version_normalized": "2.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72"
+                "reference": "83260bb50b8fc753c72d14dc1621a2dac31877ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/83260bb50b8fc753c72d14dc1621a2dac31877ee",
+                "reference": "83260bb50b8fc753c72d14dc1621a2dac31877ee",
                 "shasum": ""
             },
             "require": {
@@ -1303,11 +1261,11 @@
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
-            "time": "2021-10-06T17:43:30+00:00",
+            "time": "2022-06-09T08:26:02+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "installation-source": "dist",
@@ -1370,7 +1328,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.1.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.3.0"
             },
             "funding": [
                 {
@@ -1390,22 +1348,22 @@
         },
         {
             "name": "league/container",
-            "version": "3.3.5",
-            "version_normalized": "3.3.5.0",
+            "version": "3.4.1",
+            "version_normalized": "3.4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/container.git",
-                "reference": "048ab87810f508dbedbcb7ae941b606eb8ee353b"
+                "reference": "84ecbc2dbecc31bd23faf759a0e329ee49abddbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/container/zipball/048ab87810f508dbedbcb7ae941b606eb8ee353b",
-                "reference": "048ab87810f508dbedbcb7ae941b606eb8ee353b",
+                "url": "https://api.github.com/repos/thephpleague/container/zipball/84ecbc2dbecc31bd23faf759a0e329ee49abddbd",
+                "reference": "84ecbc2dbecc31bd23faf759a0e329ee49abddbd",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0 || ^8.0",
-                "psr/container": "^1.0.0 || ^2.0.0"
+                "psr/container": "^1.0.0"
             },
             "provide": {
                 "psr/container-implementation": "^1.0"
@@ -1414,12 +1372,12 @@
                 "orno/di": "~2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0",
-                "roave/security-advisories": "dev-master",
+                "phpunit/phpunit": "^6.0 || ^7.0",
+                "roave/security-advisories": "dev-latest",
                 "scrutinizer/ocular": "^1.8",
                 "squizlabs/php_codesniffer": "^3.5"
             },
-            "time": "2021-03-16T09:42:56+00:00",
+            "time": "2021-07-09T08:23:52+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1460,7 +1418,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/container/issues",
-                "source": "https://github.com/thephpleague/container/tree/3.3.5"
+                "source": "https://github.com/thephpleague/container/tree/3.4.1"
             },
             "funding": [
                 {
@@ -1532,17 +1490,17 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.3.5",
-            "version_normalized": "2.3.5.0",
+            "version": "2.7.0",
+            "version_normalized": "2.7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "fd4380d6fc37626e2f799f29d91195040137eba9"
+                "reference": "5579edf28aee1190a798bfa5be8bc16c563bd524"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fd4380d6fc37626e2f799f29d91195040137eba9",
-                "reference": "fd4380d6fc37626e2f799f29d91195040137eba9",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5579edf28aee1190a798bfa5be8bc16c563bd524",
+                "reference": "5579edf28aee1190a798bfa5be8bc16c563bd524",
                 "shasum": ""
             },
             "require": {
@@ -1555,18 +1513,23 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
-                "elasticsearch/elasticsearch": "^7",
+                "elasticsearch/elasticsearch": "^7 || ^8",
+                "ext-json": "*",
                 "graylog2/gelf-php": "^1.4.2",
+                "guzzlehttp/guzzle": "^7.4",
+                "guzzlehttp/psr7": "^2.2",
                 "mongodb/mongodb": "^1.8",
                 "php-amqplib/php-amqplib": "~2.4 || ^3",
                 "php-console/php-console": "^3.1.3",
-                "phpspec/prophecy": "^1.6.1",
+                "phpspec/prophecy": "^1.15",
                 "phpstan/phpstan": "^0.12.91",
-                "phpunit/phpunit": "^8.5",
+                "phpunit/phpunit": "^8.5.14",
                 "predis/predis": "^1.1",
-                "rollbar/rollbar": "^1.3",
-                "ruflin/elastica": ">=0.90@dev",
-                "swiftmailer/swiftmailer": "^5.3|^6.0"
+                "rollbar/rollbar": "^1.3 || ^2 || ^3",
+                "ruflin/elastica": "^7",
+                "swiftmailer/swiftmailer": "^5.3|^6.0",
+                "symfony/mailer": "^5.4 || ^6",
+                "symfony/mime": "^5.4 || ^6"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -1585,7 +1548,7 @@
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
                 "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
-            "time": "2021-10-01T21:08:31+00:00",
+            "time": "2022-06-09T08:59:12+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1618,7 +1581,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.3.5"
+                "source": "https://github.com/Seldaek/monolog/tree/2.7.0"
             },
             "funding": [
                 {
@@ -1757,24 +1720,24 @@
         },
         {
             "name": "phpseclib/bcmath_compat",
-            "version": "2.0.0",
-            "version_normalized": "2.0.0.0",
+            "version": "2.0.1",
+            "version_normalized": "2.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/bcmath_compat.git",
-                "reference": "fd896dfceffc13d8cf45d2ee3470777a70026f3c"
+                "reference": "2ffea8bfe1702b4535a7b3c2649c4301968e9a3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/bcmath_compat/zipball/fd896dfceffc13d8cf45d2ee3470777a70026f3c",
-                "reference": "fd896dfceffc13d8cf45d2ee3470777a70026f3c",
+                "url": "https://api.github.com/repos/phpseclib/bcmath_compat/zipball/2ffea8bfe1702b4535a7b3c2649c4301968e9a3c",
+                "reference": "2ffea8bfe1702b4535a7b3c2649c4301968e9a3c",
                 "shasum": ""
             },
             "require": {
                 "phpseclib/phpseclib": "^3.0"
             },
             "provide": {
-                "ext-bcmath": "8.0.0"
+                "ext-bcmath": "8.1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35|^5.7|^6.0|^9.4",
@@ -1783,7 +1746,7 @@
             "suggest": {
                 "ext-gmp": "Will enable faster math operations"
             },
-            "time": "2020-12-22T16:38:51+00:00",
+            "time": "2021-12-16T02:35:52+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -1805,7 +1768,7 @@
                     "homepage": "http://phpseclib.sourceforge.net"
                 }
             ],
-            "description": "PHP 5.x/7.x polyfill for bcmath extension",
+            "description": "PHP 5.x-8.x polyfill for bcmath extension",
             "keywords": [
                 "BigInteger",
                 "bcmath",
@@ -1822,17 +1785,17 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.12",
-            "version_normalized": "3.0.12.0",
+            "version": "3.0.14",
+            "version_normalized": "3.0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb"
+                "reference": "2f0b7af658cbea265cbb4a791d6c29a6613f98ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb",
-                "reference": "89bfb45bd8b1abc3b37e910d57f5dbd3174f40fb",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/2f0b7af658cbea265cbb4a791d6c29a6613f98ef",
+                "reference": "2f0b7af658cbea265cbb4a791d6c29a6613f98ef",
                 "shasum": ""
             },
             "require": {
@@ -1841,9 +1804,7 @@
                 "php": ">=5.6.1"
             },
             "require-dev": {
-                "phing/phing": "~2.7",
-                "phpunit/phpunit": "^5.7|^6.0|^9.4",
-                "squizlabs/php_codesniffer": "~2.0"
+                "phpunit/phpunit": "*"
             },
             "suggest": {
                 "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
@@ -1851,7 +1812,7 @@
                 "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
                 "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
             },
-            "time": "2021-11-28T23:46:03+00:00",
+            "time": "2022-04-04T05:15:45+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -1916,7 +1877,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.12"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.14"
             },
             "funding": [
                 {
@@ -2308,23 +2269,23 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v2.5.0",
-            "version_normalized": "2.5.0.0",
+            "version": "v2.5.1",
+            "version_normalized": "2.5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "6f981ee24cf69ee7ce9736146d1c57c2780598a8"
+                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/6f981ee24cf69ee7ce9736146d1c57c2780598a8",
-                "reference": "6f981ee24cf69ee7ce9736146d1c57c2780598a8",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
+                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
-            "time": "2021-07-12T14:48:14+00:00",
+            "time": "2022-01-02T09:53:40+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2358,7 +2319,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.1"
             },
             "funding": [
                 {
@@ -2378,30 +2339,33 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.22.1",
-            "version_normalized": "1.22.1.0",
+            "version": "v1.26.0",
+            "version_normalized": "1.26.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e"
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
-                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
+            "provide": {
+                "ext-ctype": "*"
+            },
             "suggest": {
                 "ext-ctype": "For best performance"
             },
-            "time": "2021-01-07T16:49:33+00:00",
+            "time": "2022-05-24T11:49:31+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.22-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -2410,12 +2374,12 @@
             },
             "installation-source": "dist",
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2440,7 +2404,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.1"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -2460,27 +2424,27 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.22.1",
-            "version_normalized": "1.22.1.0",
+            "version": "v1.26.0",
+            "version_normalized": "1.26.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "a678b42e92f86eca04b7fa4c0f6f19d097fb69e2"
+                "reference": "e440d35fa0286f77fb45b79a03fedbeda9307e85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/a678b42e92f86eca04b7fa4c0f6f19d097fb69e2",
-                "reference": "a678b42e92f86eca04b7fa4c0f6f19d097fb69e2",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/e440d35fa0286f77fb45b79a03fedbeda9307e85",
+                "reference": "e440d35fa0286f77fb45b79a03fedbeda9307e85",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
-            "time": "2021-01-07T16:49:33+00:00",
+            "time": "2022-05-24T11:49:31+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.22-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -2489,12 +2453,12 @@
             },
             "installation-source": "dist",
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php73\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php73\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -2522,7 +2486,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.22.1"
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -2542,27 +2506,27 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.24.0",
-            "version_normalized": "1.24.0.0",
+            "version": "v1.26.0",
+            "version_normalized": "1.26.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "57b712b08eddb97c762a8caa32c84e037892d2e9"
+                "reference": "cfa0ae98841b9e461207c13ab093d76b0fa7bace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/57b712b08eddb97c762a8caa32c84e037892d2e9",
-                "reference": "57b712b08eddb97c762a8caa32c84e037892d2e9",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/cfa0ae98841b9e461207c13ab093d76b0fa7bace",
+                "reference": "cfa0ae98841b9e461207c13ab093d76b0fa7bace",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
-            "time": "2021-09-13T13:58:33+00:00",
+            "time": "2022-05-10T07:21:04+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.23-dev"
+                    "dev-main": "1.26-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -2608,7 +2572,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -2627,18 +2591,100 @@
             "install-path": "../symfony/polyfill-php80"
         },
         {
-            "name": "symfony/translation-contracts",
-            "version": "v2.3.0",
-            "version_normalized": "2.3.0.0",
+            "name": "symfony/polyfill-php81",
+            "version": "v1.26.0",
+            "version_normalized": "1.26.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "e2eaa60b558f26a4b0354e1bbb25636efaaad105"
+                "url": "https://github.com/symfony/polyfill-php81.git",
+                "reference": "13f6d1271c663dc5ae9fb843a8f16521db7687a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/e2eaa60b558f26a4b0354e1bbb25636efaaad105",
-                "reference": "e2eaa60b558f26a4b0354e1bbb25636efaaad105",
+                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/13f6d1271c663dc5ae9fb843a8f16521db7687a1",
+                "reference": "13f6d1271c663dc5ae9fb843a8f16521db7687a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "time": "2022-05-24T11:49:31+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php81\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php81/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/polyfill-php81"
+        },
+        {
+            "name": "symfony/translation-contracts",
+            "version": "v2.5.1",
+            "version_normalized": "2.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "1211df0afa701e45a04253110e959d4af4ef0f07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/1211df0afa701e45a04253110e959d4af4ef0f07",
+                "reference": "1211df0afa701e45a04253110e959d4af4ef0f07",
                 "shasum": ""
             },
             "require": {
@@ -2647,11 +2693,11 @@
             "suggest": {
                 "symfony/translation-implementation": ""
             },
-            "time": "2020-09-28T13:05:58+00:00",
+            "time": "2022-01-02T09:53:40+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-main": "2.5-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -2689,7 +2735,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/translation-contracts/tree/v2.3.0"
+                "source": "https://github.com/symfony/translation-contracts/tree/v2.5.1"
             },
             "funding": [
                 {
@@ -2709,57 +2755,61 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v5.2.7",
-            "version_normalized": "5.2.7.0",
+            "version": "v5.4.8",
+            "version_normalized": "5.4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "b0be0360bfbf15059308d815da7f4151bd448b37"
+                "reference": "bdc6d04ba95c73ccbf906b4ad9b8775c738d83ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/b0be0360bfbf15059308d815da7f4151bd448b37",
-                "reference": "b0be0360bfbf15059308d815da7f4151bd448b37",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/bdc6d04ba95c73ccbf906b4ad9b8775c738d83ad",
+                "reference": "bdc6d04ba95c73ccbf906b4ad9b8775c738d83ad",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-                "symfony/deprecation-contracts": "^2.1",
+                "symfony/deprecation-contracts": "^2.1|^3",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/polyfill-php73": "~1.0",
-                "symfony/polyfill-php80": "^1.15",
-                "symfony/translation-contracts": "^1.1|^2"
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/polyfill-php81": "^1.22",
+                "symfony/translation-contracts": "^1.1|^2|^3"
             },
             "conflict": {
-                "doctrine/lexer": "<1.0.2",
+                "doctrine/annotations": "<1.13",
+                "doctrine/cache": "<1.11",
+                "doctrine/lexer": "<1.1",
                 "phpunit/phpunit": "<5.4.3",
                 "symfony/dependency-injection": "<4.4",
                 "symfony/expression-language": "<5.1",
                 "symfony/http-kernel": "<4.4",
                 "symfony/intl": "<4.4",
+                "symfony/property-info": "<5.3",
                 "symfony/translation": "<4.4",
                 "symfony/yaml": "<4.4"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.10.4",
-                "doctrine/cache": "~1.0",
+                "doctrine/annotations": "^1.13",
+                "doctrine/cache": "^1.11|^2.0",
                 "egulias/email-validator": "^2.1.10|^3",
-                "symfony/cache": "^4.4|^5.0",
-                "symfony/config": "^4.4|^5.0",
-                "symfony/console": "^4.4|^5.0",
-                "symfony/dependency-injection": "^4.4|^5.0",
-                "symfony/expression-language": "^5.1",
-                "symfony/finder": "^4.4|^5.0",
-                "symfony/http-client": "^4.4|^5.0",
-                "symfony/http-foundation": "^4.4|^5.0",
-                "symfony/http-kernel": "^4.4|^5.0",
-                "symfony/intl": "^4.4|^5.0",
-                "symfony/mime": "^4.4|^5.0",
-                "symfony/property-access": "^4.4|^5.0",
-                "symfony/property-info": "^4.4|^5.0",
-                "symfony/translation": "^4.4|^5.0",
-                "symfony/yaml": "^4.4|^5.0"
+                "symfony/cache": "^4.4|^5.0|^6.0",
+                "symfony/config": "^4.4|^5.0|^6.0",
+                "symfony/console": "^4.4|^5.0|^6.0",
+                "symfony/dependency-injection": "^4.4|^5.0|^6.0",
+                "symfony/expression-language": "^5.1|^6.0",
+                "symfony/finder": "^4.4|^5.0|^6.0",
+                "symfony/http-client": "^4.4|^5.0|^6.0",
+                "symfony/http-foundation": "^4.4|^5.0|^6.0",
+                "symfony/http-kernel": "^4.4|^5.0|^6.0",
+                "symfony/intl": "^4.4|^5.0|^6.0",
+                "symfony/mime": "^4.4|^5.0|^6.0",
+                "symfony/property-access": "^4.4|^5.0|^6.0",
+                "symfony/property-info": "^5.3|^6.0",
+                "symfony/translation": "^4.4|^5.0|^6.0",
+                "symfony/yaml": "^4.4|^5.0|^6.0"
             },
             "suggest": {
                 "egulias/email-validator": "Strict (RFC compliant) email validation",
@@ -2773,7 +2823,7 @@
                 "symfony/translation": "For translating validation errors.",
                 "symfony/yaml": ""
             },
-            "time": "2021-04-14T13:12:03+00:00",
+            "time": "2022-04-15T08:07:45+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -2801,7 +2851,7 @@
             "description": "Provides tools to validate values",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/validator/tree/v5.2.7"
+                "source": "https://github.com/symfony/validator/tree/v5.4.8"
             },
             "funding": [
                 {

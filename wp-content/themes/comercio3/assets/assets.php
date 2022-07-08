@@ -59,15 +59,14 @@ function comercio_script()
 
         // Register the script like this for a theme:
 
-            wp_register_script('popper-js', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js', false, true);
-            wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js', false, true);
+    wp_register_script('comercio-js', get_bloginfo('template_directory') . '/assets/librerias/js/titan.js', array('jquery'), '1', false);
+       wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', false, true);
         wp_register_script('slider-fluid', get_bloginfo('template_directory') . '/assets/librerias/js/slick.js', array('jquery'), '1', true);
         wp_register_script('parallax', get_bloginfo('template_directory') . '/assets/librerias/js/parallax.js', array('jquery'), '1', false);
-        wp_register_script('comercio-js', get_bloginfo('template_directory') . '/assets/librerias/js/titan.js', array('jquery'), '1', false, true);
+        
         
         /*encolamos los JS*/
         wp_enqueue_script('comercio-js', array('jquery'), true);
-        wp_enqueue_script('popper-js');
         wp_enqueue_script('bootstrap-js');
         wp_enqueue_script('parallax');
         wp_enqueue_script('slider-fluid');
@@ -207,7 +206,7 @@ include get_template_directory() . '/assets/modulos/modulo-contador/core-contado
 include get_template_directory() . '/assets/modulos/modulo-multibanner2/core-multibanner2.php';
 include get_template_directory() . '/assets/modulos/modulo-multibanner/core-multibanner.php';
 include get_template_directory() . '/assets/modulos/modulo-multibanner3/core-multibanner3.php';
-
+include get_template_directory() . '/assets/modulos/modulo-categorias-oferta/core-categorias-oferta.php';
 //widget wsapp
 include get_template_directory() . '/assets/widgets/widget-whatsapp.php';
 

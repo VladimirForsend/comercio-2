@@ -40,35 +40,62 @@ jQuery(function($) {
     $("ul.nav-item.dropdown").addClass("dropdown-menu");
     $("ul.nav-item.dropdown").removeClass("nav-item dropdown");
     $('ul.dropdown-menu').attr('aria-labelledby', 'navbarDropdown');
-    $(".menu-item-has-children a:nth-child(0)").addClass("nav-link dropdown-toggle");
-    $('.menu-item-has-children a:nth-child(0)').attr('role', 'button');
-    $('.menu-item-has-children a:nth-child(0)').attr('data-toggle', 'dropdown');
-    $('.menu-item-has-children a:nth-child(0)').attr('aria-haspopup', 'true');
+    $(".menu-item-has-children a:nth-child(1)").addClass("nav-link dropdown-toggle");
+    $('.menu-item-has-children a:nth-child(1)').attr('role', 'button');
+    $('.menu-item-has-children a:nth-child(1)').attr('data-bs-toggle', 'dropdown');
+    $('.menu-item-has-children a:nth-child(1)').attr('aria-expanded', 'true');
+    $('.menu-item-has-children a:nth-child(1)').attr('id', 'navbarDropdown');
+    $(".pop-menu .menu-item-has-children a.nav-item.dropdown:nth-child(1)").after('<i class="fas fa-angle-right"></i>');
     $("li.nav-item a").addClass('nav-link');
     $(".navbar .menu-item a").addClass('nav-link');
 
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-    })
 
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
+    $(function() {
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
+
+    })
 
 
     $(function() {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-        $('[data-toggle="tooltip"]').tooltip()
     })
 
 
+    $('[data-bs-toggle="popover"]').on('shown.bs.popover', function() {
+
+
+        $(".pop-menu .menu-item-has-children").mouseenter(function() {
+            $('.popover').addClass("pop-menu-popover");
+            $(this).addClass("active-bg");
+            $(this).children(".nav-item.dropdown").addClass("active");
+
+
+
+
+        });
+
+
+
+        $(".pop-menu .menu-item-has-children").mouseleave(function() {
+            $('popover').removeClass("pop-menu-popover");
+            $(this).removeClass("active-bg");
+            $(this).children(".nav-item.dropdown").removeClass("active");
+
+
+        });
+
+        console.log('pop over mega menu corriendo');
+    });
 
     $(".pop-menu .menu-item-has-children").hover(function() {
         $(".pop-menu .menu-item-has-children ul").toggleClass("mostrar");
     });
+
+
 
 
     var titulos_productos = $(".product-template-default .entry-header");
