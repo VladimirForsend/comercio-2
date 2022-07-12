@@ -1,0 +1,17 @@
+.tarjeta-carr-cat {
+    position: relative;
+}
+
+.tarjeta-carr-cat a {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    padding: 1rem;
+    display: flex;
+    width: 100px;
+    top: -30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

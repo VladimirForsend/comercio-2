@@ -12,11 +12,11 @@
 
 ?>
 
-<footer id="colophon" class="site-footer">
+<footer id="colophon" class="site-footer pt-3">
 	<div class="container">
 
 		<div class="row">
-			<div class="mt-3 col-12 col-sm-12 col-md-12 col-lg-10">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-8">
 				<div class="row">
 					<div class="logo footer col-12 col-sm-6 col-md-4 col-lg-3">
 
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 
-			<div class="col-12 col-sm-12 col-md-12 col-lg-2">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-4">
 
 
 				<?php

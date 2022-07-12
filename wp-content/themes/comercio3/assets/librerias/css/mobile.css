@@ -410,8 +410,6 @@
     footer#colophon #menu-rrss {
         display: flex;
         color: #333;
-        justify-content: space-around;
-        align-items: flex-start;
         width: 100%;
     }
     
@@ -421,13 +419,6 @@
     
     footer#colophon #menu-rrss .boton-con-icono::before {
         color: #999;
-    }
-    
-    footer#colophon .rrss-menu.boton-con-icono {
-        position: relative;
-        width: auto;
-        height: auto;
-        font-size: 1.4rem;
     }
     
     footer#colophon #menu-rrss .boton-con-icono:hover:before {
@@ -440,7 +431,6 @@
         font-size: 0.8rem;
         background-color: #222;
         border-top: 5px solid var(--color-cliente);
-        margin-top: 3rem;
     }
     
     #menu-rrss-footer {
@@ -515,10 +505,11 @@
     
     h5.titulo-menu-footer {
         font-size: 1rem;
-        color: #bbb;
+        color: #fff;
         cursor: default;
         border: none;
         padding-left: 0;
+        font-weight: 900;
     }
     /*paginas*/
     

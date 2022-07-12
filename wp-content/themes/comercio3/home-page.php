@@ -53,5 +53,9 @@ endif; ?>
         ?>
     </div>
 </main><!-- #main -->
+
+    <!-- boxinfo -->
+    <?php include get_template_directory() . '/assets/modulos/modulo-boxinfo/loop-modulo-boxinfo.php'; ?>
+    <!-- boxinfo -->
 <?php
 get_footer();

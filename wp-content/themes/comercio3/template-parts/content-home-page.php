@@ -44,4 +44,7 @@
     <!-- slider de productos destacados -->
     <?php include get_template_directory() . '/assets/modulos/modulo-productos/producto-destacados-post-type.php'; ?>
     <!-- fin de slider de productos destacados -->
+
+
+
 </article><!-- #post-<?php the_ID(); ?> -->
