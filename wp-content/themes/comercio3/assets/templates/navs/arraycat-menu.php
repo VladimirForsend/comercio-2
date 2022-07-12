@@ -4,6 +4,6 @@
                         'theme_location' => 'menu-superior',
                         'menu_id'        => 'navbar',
                         'menu_class'     => 'navbar-nav pop-menu',
-                        'container_class' => 'nada',
+                        'container_class' => 'nada'
                     )
                 );

@@ -83,3 +83,43 @@ footer#colophon #menu-rrss .boton-con-icono:hover:before {
     border-radius: 0px!important;
     left: 0px;
 }
+
+ul.products li.product .comercio-product-card .tarjeta-producto-superior .onsale {
+    position: absolute;
+    z-index: 1;
+    padding: .3rem;
+    font-size: .9rem;
+    top: 0px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 0px;
+    min-height: 10px;
+    max-height: 20px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    max-width: 100px;
+    width: auto;
+}
+
+ul.products li.product .comercio-product-card .tarjeta-producto-superior .onsale {
+    position: absolute;
+    z-index: 1;
+    padding: .3rem;
+    font-size: .9rem;
+    top: 0px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 0px;
+    min-height: 10px;
+    max-height: 20px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    max-width: 100px;
+    width: auto;
+}

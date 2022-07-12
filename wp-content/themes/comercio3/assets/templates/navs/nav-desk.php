@@ -28,7 +28,7 @@
 
             </div>
             <div class="contenedor-categorias-boton col-6 col-md-2">
-                <a tabindex="0" class="d-flex align-items-center" data-bs-html="true" role="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content='<?php include get_template_directory() . '/assets/templates/navs/arraycat-menu.php'; ?>'>
+                <a rel="popover" tabindex="0" class="d-flex align-items-center" data-bs-html="true" role="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content='<?php include get_template_directory() . '/assets/templates/navs/arraycat-menu.php'; ?>'>
                     <button class="boton-menu-desk" type="button">
                             <div class="boton-hamburguesa">
                             <span class="linea-hamburguesa"></span>

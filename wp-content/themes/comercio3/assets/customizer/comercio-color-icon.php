@@ -559,8 +559,9 @@ function color_producto_titan()
         }
 
         .lista-productos .onsale,
-        .single-product.single.woocommerce span.onsale {
+        .single-product.single.woocommerce span.onsale, ul.products li.product .comercio-product-card .tarjeta-producto-superior .onsale{
             background-color: <?php echo get_theme_mod('color_fondo_onsale', '#000000'); ?>;
+
         }
 
 
