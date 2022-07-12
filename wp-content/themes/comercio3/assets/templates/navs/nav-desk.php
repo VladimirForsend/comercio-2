@@ -5,7 +5,7 @@
     <!---conatiner-->
     <div class="container-fluid">
         <!---row-->
-        <div class="row w-100 hola-estudiantes">
+        <div class="row w-100">
             <!---navbrand-->
             <div class="navbar-brand col-6 col-md-1">
 
