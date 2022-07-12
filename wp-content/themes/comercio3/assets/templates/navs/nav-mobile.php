@@ -1,4 +1,4 @@
-<nav id="site-navigation" class="navbar navbar-expand-lg navbar-light bg-light nav-mobile">
+<nav id="site-navigation" class="navbar navbar-expand-lg navbar-light  nav-mobile">
     <!---conatiner-->
     <div class="container-fluid">
         <!---row-->
