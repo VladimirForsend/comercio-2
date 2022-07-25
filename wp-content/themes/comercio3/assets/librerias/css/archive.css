@@ -150,8 +150,8 @@ select.orderby {
     right: 1rem;
 }
 
-.woocommerce ul.products li.product,
-.woocommerce-page ul.products li.product {
+.archive .woocommerce ul.products li.product,
+.archive .woocommerce-page ul.products li.product {
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
